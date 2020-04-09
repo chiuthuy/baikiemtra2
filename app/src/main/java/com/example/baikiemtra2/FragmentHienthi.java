@@ -61,7 +61,7 @@ public class FragmentHienthi extends Fragment {
                                 jsonObject.getString("tenmon"),
                                 jsonObject.getString("gia")
                         ));
-                        Log.d("kiemtra",arrayList.get(i).getTen());
+                        //Log.d("kiemtra",arrayList.get(i).getTen());
                         hienthiAdapter.notifyDataSetChanged();
                     } catch (JSONException e) {
                         e.printStackTrace();

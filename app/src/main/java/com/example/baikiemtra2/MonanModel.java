@@ -1,6 +1,8 @@
 package com.example.baikiemtra2;
 
-public class MonanModel {
+import java.io.Serializable;
+
+public class MonanModel implements Serializable {
     int id;
     String img;
     String ten;
