@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <View
-        android:background="#E7DBDB"
+        android:background="#F3EBEB"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="5dp"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:layout_marginTop="20dp"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:text="Tên món:"
                 android:layout_toRightOf="@+id/img"
                 android:layout_marginLeft="13dp"
@@ -52,7 +52,7 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="Tên món ăn"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <ImageButton
@@ -70,7 +70,7 @@
             android:orientation="horizontal">
             <TextView
                 android:layout_marginTop="20dp"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:text="Giá:"
                 android:layout_toRightOf="@+id/img"
                 android:layout_marginLeft="13dp"
@@ -81,15 +81,20 @@
             <TextView
                 android:layout_marginTop="20dp"
                 android:id="@+id/txtgia"
-                android:layout_width="170dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="13dp"
                 android:layout_toRightOf="@+id/txtten"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="100000 vnd"
-                android:textSize="13sp"
+                android:text="100000"
+                android:textSize="15sp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vnd"/>
 
             <ImageButton
                 android:id="@+id/imgxoa"

@@ -60,7 +60,7 @@ public class UpdateMonan extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, s, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if(response.equals("0")){
+                if(response.equals("error")){
                     Toast.makeText(UpdateMonan.this, "Lỗi", Toast.LENGTH_SHORT).show();
                 }else {
                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);

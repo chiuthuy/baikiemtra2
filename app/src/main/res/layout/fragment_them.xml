@@ -10,7 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/txtten"
+                android:id="@+id/edten"
                 android:hint="Nhập tên món"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -19,17 +19,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/txtgia"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/edhinhanh"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hình ảnh"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edgia"
                 android:hint="Nhập số tiền"
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
-        <Button
-            android:id="@+id/nuthem"
-            android:text="Thêm"
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnthem"
+                android:text="Thêm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnhuy"
+                android:text="Hủy"/>
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>
