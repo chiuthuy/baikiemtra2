@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void addTags(ViewPager viewPager){
         ViewpagerAdapter adapter=new ViewpagerAdapter(getSupportFragmentManager());
-        adapter.add(new FragmentThem(),"THÊM MÓN ĂN");
         adapter.add(new FragmentHienthi(),"DANH SÁCH MÓN ĂN");
+        adapter.add(new FragmentThem(),"THÊM MÓN ĂN");
         viewPager.setAdapter(adapter);
     }
 }

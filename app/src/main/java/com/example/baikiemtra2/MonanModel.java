@@ -1,21 +1,31 @@
 package com.example.baikiemtra2;
 
 public class MonanModel {
-    int img;
+    int id;
+    String img;
     String ten;
     String gia;
 
-    public MonanModel(int img, String ten, String gia) {
+    public MonanModel(int id, String img, String ten, String gia) {
+        this.id = id;
         this.img = img;
         this.ten = ten;
         this.gia = gia;
     }
 
-    public int getImg() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getImg() {
         return img;
     }
 
-    public void setImg(int img) {
+    public void setImg(String img) {
         this.img = img;
     }
 

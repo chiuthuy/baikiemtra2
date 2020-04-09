@@ -10,11 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class HienthiAdapter extends RecyclerView.Adapter<HienthiAdapter.ViewHolder>{
     Context context;
-    private ArrayList<MonanModel> modelArrayList;
+     ArrayList<MonanModel> modelArrayList;
 
     public HienthiAdapter(Context context, ArrayList<MonanModel> modelArrayList) {
         this.context = context;
@@ -33,7 +35,7 @@ public class HienthiAdapter extends RecyclerView.Adapter<HienthiAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.txttenmon.setText(modelArrayList.get(position).getTen());
         holder.txtgia.setText(modelArrayList.get(position).getGia());
-        holder.img.setImageResource(modelArrayList.get(position).getImg());
+        Picasso.with(context).load(modelArrayList.get(position).getImg()).into(holder.img);
     }
 
     @Override
